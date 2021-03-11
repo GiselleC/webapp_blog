@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from os import environ as env
-
+from . import constant
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +22,7 @@ TEMPLATE_DIR = BASE_DIR / 'app/templates/app'
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'b-2%pg2qv$&5(-&(21pekus*9+bi&&+go#3*rtk&$%4y%$%4t#'
+SECRET_KEY = constant.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
